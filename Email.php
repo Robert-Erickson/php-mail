@@ -1,5 +1,7 @@
 <?php
 // This class is for preparing and sending an email message with php.
+// Written by: Robert M. Erickson
+//             June 29, 2015
 // 
 // standard setters and getters
 // valdiates informmation for correctness
