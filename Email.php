@@ -1,18 +1,4 @@
 <?php
-
-// questions what is the best way to code this?
-// 
-// 
-// should i just send the values to the class and let the class do everything?
-// ie $email->sendMail($to, $cc, $bcc, $from, $subject, $message);
-// 
-// or should validate each one?
-// or have the setters validate each one?
-// 
-// 
-// 
-// 
-// 
 // This class is for preparing and sending an email message with php.
 // 
 // standard setters and getters
@@ -28,8 +14,7 @@
 //      $message must not be empty
 //      $message must have a minimum number of characters
 //      $message must be a minimum length (just count the characters and spaces)
-//      $message should be cleand of invalid html before being sent here as you 
-//            may want to allow html characters
+//      $message should be cleaned of invalid html before being sent here as you//            may want to allow html characters
 //
 // USAGE:
 /*
@@ -47,7 +32,6 @@ $thisEmail = new Email($to, $cc, $bcc, $from, $subject, $message);
 
 // send mail
 $status = $thisEmail->sendMail($to, $cc, $bcc, $from, $subject, $message);
-
 
 if($status === true){
     print "<p>Mail has been sent to: ";
@@ -68,7 +52,6 @@ if($status === true){
     }
     print "</ol>";
 }
-
  * 
  * 
  */
