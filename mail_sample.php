@@ -36,13 +36,16 @@ $thisEmail = new Email($to, $cc, $bcc, $from, $subject, $message);
 // send mail
 $status = $thisEmail->sendMail($to, $cc, $bcc, $from, $subject, $message);
 
-
+//display information to user
 if($status === true){
     print "<p>Mail has been sent to: ";
     print $to;
     print ". Print a copy for your records:</p>";
     print $message;
 }else{
+
+    // you may not need to use the else portion. It is here
+    // so you can see it
     print '<p class="erorr">Your email has the following mistake';
     
     if(count($status)>1) print 's';
